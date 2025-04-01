@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cluster-candidates"
+dynamic = ["version"]
+description = "Code to identify and analyze same-cell candidates from an imaging volume."
+authors = [
+    { name = "Andrew Landau" }
+]
+dependencies = [
+    "numpy",
+    "numba",
+    "scipy",
+    "matplotlib",
+    "syd",
+    "opencv-python",
+]
+requires-python = ">=3.9"
+
+[tool.hatch.version]
+path = "cluster_candidates/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["cluster_candidates"]
+
+[tool.black]
+line-length = 88
