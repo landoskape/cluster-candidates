@@ -25,6 +25,12 @@ pip install -e .
 The package uses torch to speed up the correlation coefficient calculation, so it's recommended to install torch with GPU support.
 To install torch, follow the instructions [here](https://pytorch.org/get-started/locally/) after installing the dependencies.
 
+## Visualize the clusters!!!!
+This is what the main cluster explorer tool looks like:
+
+![Cluster Explorer](./media/cluster_explorer.png)
+
+
 ## Data Preparation
 1. Core data inputs:
    - `spks`: Activity data matrix (time x ROIs)
